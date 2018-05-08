@@ -1,6 +1,10 @@
 def take_a_number(katz_deli,name)
-  "Welcome,Ada. You are number #{katz_deli.size} in line."
+  if katz_deli.size==0 
+    puts "Welcome #{name} you are number 1 in line."
+  else
+    puts "Welcome,Ada. You are number #{katz_deli.size} in line."
   katz_deli.push(name)
+  
 end
 
 def line(katz_deli)
