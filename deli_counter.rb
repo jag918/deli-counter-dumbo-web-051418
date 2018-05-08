@@ -15,8 +15,9 @@ def line(katz_deli)
       if counter>katz_deli.size
         break
       end
-      puts string
+      
     end
+    puts string
   end
 end
 
