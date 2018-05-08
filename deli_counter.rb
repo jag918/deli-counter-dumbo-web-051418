@@ -7,13 +7,15 @@ def line(katz_deli)
   if katz_deli.size==0
     puts "The line is currently empty."
   else
+    string='The line is currently:'
     counter=1
     loop do 
-      puts "The line is currently:#{counter}. #{katz_deli[counter-1]},"
+      string+=" #{counter}. #{katz_deli[counter-1]}"
       counter+=1
       if counter>katz_deli.size
         break
       end
+      puts string
     end
   end
 end
